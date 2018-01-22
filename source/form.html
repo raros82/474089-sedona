@@ -23,67 +23,68 @@
               <a href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </nav>
-      <img class="page-header__image" src="http://placehold.it/320x390" width="320" height="390" alt="Welcome to Sedona">
+      <img class="page-header__main-image" src="http://placehold.it/320x390" width="320" height="390" alt="Welcome to Sedona">
     </header>
     <main class="page-form">
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
       <section class="review">
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review__form" action="https://echo.htmlacademy.ru" method="GET">
-          <b>Оставьте свой отзыв</b>
-          <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <b class="review__call">Оставьте свой отзыв</b>
+          <p class="review__motivation">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <fieldset class="review__name">
-            <legend>Представьтесь:</legend>
+            <legend class="review__legend">Представьтесь:</legend>
             <p>
               <label>
-                <span>Имя<sup>*</sup>:<span>
-                <input type="text" placeholder="Петр"></input>
+                <span>Имя<sup>*</sup>:</span>
+                <input type="text" placeholder="Петр">
               </label>
             </p>
             <p>
               <label>
-                <span>Фамилия<sup>*</sup>:<span>
-                <input type="text" placeholder="Иванов"></input>
+                <span>Фамилия<sup>*</sup>:</span>
+                <input type="text" placeholder="Иванов">
               </label>
             </p>
             <p>
               <label>
-                <span>Отчество:<span>
-                <input type="text" placeholder="Александрович"></input>
+                <span>Отчество:</span>
+                <input type="text" placeholder="Александрович">
               </label>
             </p>
           </fieldset>
           <fieldset class="review__contacts">
-            <legend>Контактная информация:</legend>
+            <legend class="review__legend">Контактная информация:</legend>
             <p>
               <label>
-                <span>Контактный телефон<sup>*</sup>:<span>
-                <input type="tel" placeholder="Введите телефон"></input>
+                <span>Контактный телефон<sup>*</sup>:</span>
+                <input type="tel" placeholder="Введите телефон">
               </label>
             </p>
             <p>
               <label>
-                <span>Электронная почта<sup>*</sup>:<span>
-                <input type="email" placeholder="Введите e-mail"></input>
+                <span>Электронная почта<sup>*</sup>:</span>
+                <input type="email" placeholder="Введите e-mail">
               </label>
             </p>
           </fieldset>
           <fieldset class="review__impression radio">
-            <legend>Ваше общее впечатление:</legend>
+            <legend class="review__legend">Ваше общее впечатление:</legend>
             <p>
               <label class="radio__item">
                 <input type="radio" name="impresion" value="good" checked>
-                <span>Cкорее положительное<span>
+                <span>Cкорее положительное</span>
               </label>
             </p>
             <p>
               <label class="radio__item">
                 <input type="radio" name="impresion" value="bad">
-                <span>Cкорее отрицательное<span>
+                <span>Cкорее отрицательное</span>
               </label>
             </p>
             <p>
@@ -94,7 +95,7 @@
             </p>
           </fieldset>
           <fieldset class="review__sightseen checkbox">
-            <legend>Посещенные достопримечательности:</legend>
+            <legend class="review__legend">Посещенные достопримечательности:</legend>
             <p>
               <label class="checkbox__item">
                 <input type="checkbox" name="Devils_Bridge" checked>
@@ -121,7 +122,7 @@
             </p>
           </fieldset>
           <fieldset class="review__emotions textarea">
-            <legend>Опишите свои эмоции:</legend>
+            <legend class="review__legend">Опишите свои эмоции:</legend>
             <p>
               <textarea placeholder="Опишите подробно все свои восторги"></textarea>
             <p>
@@ -130,11 +131,13 @@
         </form>
       </section>
       <section class="modal modal--failure">
+        <h2 class="visually-hidden">Модальное окно: Ошибка заполнения формы</h2>
         <b>Что-то пошло не так!</b>
         <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button type="button">OK</button>
       </section>
       <section class="modal modal--ok">
+        <h2 class="visually-hidden">Модальное окно: Форма заполнена правильно и отправлена</h2>
         <b>Ваш отзыв отправлен!</b>
         <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button type="button">Закрыть окно</button>
