@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'fonts';
+@import 'site-list';
 @import 'advantages';
 @import 'copyright';
 @import 'inner-page';
@@ -15,3 +18,15 @@
 @import 'social';
 @import 'video';
 @import 'visually-hidden';
+@import 'modal';
+
+
+
+body {
+  font-family: "PTSans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $base-font;
+  font-weight: normal;
+  text-transform: uppercase;
+}
