@@ -4,18 +4,12 @@
   color: black;
 }
 
-
 .review {
-
   legend {
     font-size: 18px;
     font-weight: 700;
     color: black;
   }
-}
-
-
-.review {
 
   input {
     background-color: $input-bg;
@@ -24,12 +18,9 @@
     line-height: 26px;
     text-transform: none;
   }
-}
 
-.review {
-
-  input {
-    background-color: $input-bg;
+  textarea {
+    font: inherit;
     color: black;
     font-size: 18px;
     line-height: 26px;
@@ -41,14 +32,4 @@
 .checkbox__item {
   text-transform: none;
   font-weight: 700;
-}
-
-.review {
-  textarea {
-    font: inherit;
-    color: black;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: none;
-  }
 }

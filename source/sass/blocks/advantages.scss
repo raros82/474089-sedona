@@ -1,5 +1,4 @@
 .advantages {
-
   &__intro {
     font-size: 14px;
     font-weight: 400;
@@ -16,17 +15,15 @@
 .advantages__item {
   background-color: $sedona-grey;
   // color: black;
-
   &--full {
     background-color: $sedona-blue;
     color: white;
   }
+
   &--short {
     color: black;
   }
-
 }
-
 
 .advantages__item-caption,
 .advantages__item-number,
