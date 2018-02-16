@@ -1,8 +1,27 @@
 .advantages {
   &__intro {
+    /*временно для сетки*/
+    // height: 95px;
+    outline: 1px solid red;
+    /*______________________*/
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+    margin: 0;
+    padding: 0;
+    padding-top: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+    // margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    &__intro {
+      padding-bottom: 38px;
+    }
   }
 }
 
@@ -12,23 +31,285 @@
   padding: 0;
 }
 
-.advantages__item {
-  background-color: $sedona-grey;
-  // color: black;
-  &--full {
-    background-color: $sedona-blue;
-    color: white;
-  }
-
-  &--short {
-    color: black;
-  }
-}
-
 .advantages__item-caption,
 .advantages__item-number,
 .advantages__item-description,
 .advantages__item-photo {
   margin: 0;
   padding: 0;
+}
+
+.advantages__item {
+  background-color: $sedona-grey;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__item {
+    br {
+      display: none;
+    }
+  }
+}
+
+.advantages__item-photo {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.advantages__item--full {
+  background-color: $sedona-blue;
+  color: white;
+  /*временно для сетки*/
+  // height: 454px;
+  outline: 1px solid green;
+  /*______________________*/
+
+  &:first-child {
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 40px;
+    padding-top: 40px;
+  }
+
+  .advantages__item-caption {
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .advantages__item-number {
+    display: block;
+    padding-top: 13px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .advantages__item-description {
+    padding-top: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item--short {
+  &--short {
+    color: black;
+    /*временно для сетки*/
+    // height: 168px;
+    outline: 1px solid red;
+    /*______________________*/
+  }
+
+  .advantages__item-caption {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .advantages__item-number {
+    display: block;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .advantages__item-description {
+    padding-top: 14px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    &--full {
+      display: flex;
+      flex-direction: row;
+      /*временно для сетки*/
+      height: 256px;
+      outline: 1px solid green;
+      /*______________________*/
+
+      &:first-child {
+        background-image: none;
+        padding: 0;
+      }
+
+      &-reverse {
+        flex-direction: row-reverse;
+      }
+
+      .advantages__item-caption {
+        padding-top: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 21px;
+        // max-width: 150px;
+        text-align: center;
+        // line-height: 26px;
+        // font-weight: 700;
+      }
+
+      .advantages__item-number {
+        display: block;
+        padding-top: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+      }
+
+      .advantages__item-description {
+        padding-top: 18px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        margin-bottom: 40px;
+      }
+    }
+
+    &--short {
+      /*временно для сетки*/
+      height: 257px;
+      width: 33%;
+      outline: 1px solid red;
+      /*______________________*/
+
+      .advantages__item-caption {
+        padding-top: 48px;
+        font-size: 21px;
+        max-width: 150px;
+        margin: 0 auto;
+
+        // line-height: 26px;
+        // font-weight: 700;
+      }
+
+      .advantages__item-number {
+        padding-top: 8px;
+      }
+
+      .advantages__item-description {
+        padding-top: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-weight: 400;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .advantages__text-block-wrapper {
+    width: 256px;
+    flex-grow: 0;
+  }
+
+  .advantages__img-wrapper {
+    width: 512px;
+    /*временно для сетки*/
+    overflow: hidden;
+    background-color: pink;
+    /*______________________*/
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .advantages {
+    &__intro {
+      /*временно для сетки*/
+      height: 40px;
+      outline: 1px solid red;
+      /*______________________*/
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .advantages__item {
+    &--full {
+      .advantages__item-caption {
+        padding-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      .advantages__item-description {
+        padding-top: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+    }
+
+    &--short {
+      /*временно для сетки*/
+      height: 257px;
+      width: 33%;
+      outline: 1px solid red;
+      /*______________________*/
+
+      .advantages__item-caption {
+        padding-top: 48px;
+        font-size: 21px;
+        max-width: 150px;
+        margin: 0 auto;
+
+        // line-height: 26px;
+        // font-weight: 700;
+      }
+
+      .advantages__item-number {
+        padding-top: 8px;
+      }
+
+      .advantages__item-description {
+        padding-top: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-weight: 400;
+        padding-bottom: 30px;
+      }
+    }
+
+    .advantages__text-block-wrapper {
+      width: 400px;
+      flex-grow: 0;
+    }
+
+    .advantages__img-wrapper {
+      width: 800px;
+      /*временно для сетки*/
+      overflow: hidden;
+      background-color: pink;
+      /*______________________*/
+    }
+  }
 }

@@ -1,8 +1,25 @@
 .recomendation {
+  /*временно для сетки*/
+  // height: 380px;
+  outline: 1px solid red;
+  /*______________________*/
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  background-color: white;
+  flex-grow: 1;
+
   &__list {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 35px;
+    padding-right: 20px;
+  }
+
+  &__item {
+    position: relative;
   }
 }
 
@@ -10,4 +27,132 @@
   font-size: 18px;
   line-height: 26px;
   color: black;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    // background-color: red;
+    left: -50px;
+    top: -10px;
+  }
+
+  &--home::before {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 37px 36px;
+    background-position: right top;
+  }
+
+  &--gift::before {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 37px;
+    background-position: center top;
+  }
+
+  &--food::before {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 38px 34px;
+    background-position: left bottom;
+  }
+}
+
+.recomendation__item-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: $base-font;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .recomendation {
+    // min-height: 330px;
+    padding: 0;
+    margin: 0;
+
+    &__list {
+      outline: 1px dashed green;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 0;
+      padding-top: 158px;
+      width: 165px;
+      outline: 1px dashed red;
+      text-align: center;
+    }
+
+    &__item--gift {
+      order: 2;
+    }
+  }
+
+  .recomendation__item-caption {
+    font-size: 21px;
+    font-weight: 700;
+
+
+    &::before {
+      content: "";
+      width: 95px;
+      height: 95px;
+      position: absolute;
+      // background-color: red;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
+    }
+
+    &--home::before {
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: 75px 72px;
+      background-position: center top 10px;
+    }
+
+    &--gift::before {
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: 64px 75px;
+      background-position: center top 3px;
+    }
+
+    &--food::before {
+      background-image: url("../img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: 77px 68px;
+      background-position: center bottom 18px;
+    }
+  }
+
+  .recomendation__item-description {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recomendation {
+    &__item {
+      width: 300px;
+    }
+
+    &__item-description {
+      padding-bottom: 80px;
+    }
+  }
 }

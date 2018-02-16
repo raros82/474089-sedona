@@ -1,14 +1,104 @@
+.social {
+  /*временно для сетки*/
+  // height: 168px;
+  outline: 1px solid magenta;
+  /*______________________*/
+  text-align: center;
+  padding-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 512px;
+    display: flex;
+    padding: 35px 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 800px;
+    padding: 37px 132px;
+  }
+}
+
 .social__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-top: 0;
+    margin-left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-top: 0;
+    margin-left: 255px;
+  }
 }
 
 .social__link {
   a {
     text-decoration: none;
+    display: block;
+    width: 46px;
+    height: 48px;
+    background-color: $sedona-blue;
+    margin: 3px;
+  }
+}
+
+.social__link--twitter {
+  a {
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px 14px;
+  }
+}
+
+.social__link--facebook {
+  a {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px 18px;
+  }
+}
+
+.social__link--youtube {
+  a {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 14px;
   }
 }
 
 .social__tag {
+  margin: 0;
+  padding: 0;
   font-family: "PTSans", "Tahoma", sans-serif;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .social__tag {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__tag {
+    padding-top: 15px;
+  }
 }

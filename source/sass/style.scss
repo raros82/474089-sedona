@@ -1,0 +1,55 @@
+@import "blocks/variables";
+// @import "blocks/outlines";
+/*рабочие блоки*/
+@import "blocks/fonts";
+@import "blocks/site-list";
+@import "blocks/advantages";
+@import "blocks/copyright";
+@import "blocks/main-footer";
+@import "blocks/main-nav";
+@import "blocks/map";
+@import "blocks/motel-booking";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/page-photo";
+@import "blocks/photo-item";
+@import "blocks/recomendation";
+@import "blocks/review";
+@import "blocks/social";
+@import "blocks/video";
+@import "blocks/visually-hidden";
+@import "blocks/modal";
+
+/*пустые блоки*/
+// @import "blocks/page-form";
+// @import "blocks/inner-page";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-font;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-color: #f2f2f2;
+  }
+
+  // body {
+  //   max-width: $desktop-width;
+  //   margin: 0 auto;
+  //   background-color: white;
+  //   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  // }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

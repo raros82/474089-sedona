@@ -1,3 +1,59 @@
 .copyright {
   color: black;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  /*временно для сетки*/
+  // height: 75px;
+  outline: 1px solid red;
+  /*______________________*/
+  padding-top: 35px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 130px;
+    height: 35px;
+    outline: 1px solid cyan;
+  }
+
+  b {
+    padding-top: 5px;
+    outline: 1px solid green;
+    font-weight: 400;
+  }
+
+  .copyright__logo {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    width: 256px;
+
+    &__wrapper {
+      justify-content: space-between;
+      margin: 0;
+      margin-left: 27px;
+      margin-top: 8px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    width: 400px;
+
+    &__wrapper {
+      justify-content: space-between;
+      margin: 0;
+      margin-left: 138px;
+      margin-top: 12px;
+    }
+  }
 }

@@ -1,0 +1,85 @@
+.page-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  // min-height: 445px;
+  outline: 1px dashed red;
+  // background-color: white;
+  background-image:
+    url("../img/text-sedona-index.svg"),
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 280px auto, 320px auto, auto;
+  background-position: center bottom 85px, bottom center, center bottom;
+
+  &__logo {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 2;
+    margin: 0 auto;
+    z-index: 2;
+    // height: 444px;
+  }
+}
+
+.inner-page .page-header {
+  // height: 420px;
+  background-image:
+    // url("../img/text-sedona-index.svg"),
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px auto, auto;
+  background-position: bottom center, center bottom;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    height: 574px;
+    background-image:
+      url("../img/text-sedona-index.svg"),
+      // url("../img/bg-triangle.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 460px auto, auto 100%;
+    background-position: center bottom 90px, center top;
+
+    &__logo {
+      position: absolute;
+      outline: 1px solid red;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      height: auto;
+      // order: 0;
+    }
+  }
+
+  .inner-page .page-header {
+    height: 346px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+    background-image:
+      url("../img/text-sedona-index.svg"),
+      // url("../img/bg-triangle.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 460px auto, cover;
+    background-position: center bottom 90px, center top;
+  }
+
+  .inner-page .page-header {
+    height: 356px;
+    background-size: 320px auto, 100% auto;
+  }
+}

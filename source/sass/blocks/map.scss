@@ -1,0 +1,19 @@
+.map {
+  /*временно для сетки*/
+  // height: 354px;
+  outline: 1px solid red;
+  background-color: lightgreen;
+  /*______________________*/
+}
+
+
+.map__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    margin: 0 auto;
+    background-color: green;
+  }
+}

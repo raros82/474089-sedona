@@ -1,7 +1,54 @@
+.motel-booking {
+  /*временно для сетки*/
+  // height: 280px;
+  outline: 1px solid red;
+  /*______________________*/
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .motel-booking {
+    padding-top: 55px;
+  }
+}
+
 .motel-booking__capture-text {
   font-size: 21px;
   line-height: 26px;
   color: black;
+}
+
+@media (min-width: $tablet-width) {
+  .motel-booking__capture-text {
+    font-size: 30px;
+  }
+}
+
+.motel-booking__clarification {
+  margin: 0;
+  padding: 0;
+  padding-top: 18px;
+  margin-bottom: 36px;
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .motel-booking__clarification {
+    padding-top: 28px;
+    max-width: 460px;
+    margin: 0 auto;
+
+    br {
+      display: inline;
+    }
+  }
 }
 
 .motel-booking__button {
@@ -13,5 +60,20 @@
   line-height: 26px;
   color: white;
   text-transform: uppercase;
-  padding: 10px 46px;
+  padding: 15px 47px;
+}
+
+@media (min-width: $tablet-width) {
+  .motel-booking__button {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 15px 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motel-booking__button {
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
 }
